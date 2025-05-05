@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Aleatória</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background-color 0.5s;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo à Página Aleatória!</h1>
+  <p>Clique no botão para mudar a cor de fundo:</p>
+  <button onclick="mudarCor()">Mudar Cor</button>
+
+  <script>
+    function mudarCor() {
+      const cores = ["#f9c74f", "#90be6d", "#f94144", "#577590", "#f9844a"];
+      const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+      document.body.style.backgroundColor = corAleatoria;
+    }
+  </script>
+</body>
+</html>
